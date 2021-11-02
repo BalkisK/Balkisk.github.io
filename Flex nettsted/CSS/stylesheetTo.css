@@ -1,0 +1,67 @@
+.innpakning {
+    width: 70%;
+    background-color: #404040;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;/*Bestemmer hvordan innholdet orienter seg vannrett, dvs vi kan bryte rader */
+}
+
+.topptekst {
+    flex-basis: 100%;/*Fyller berdden i innpakning helt*/
+    height: 550px;
+    background-color: #909090;
+    padding: 5px;
+    margin: 5px;
+    order: 1;
+}
+
+.meny {
+    flex-basis: 200px; /*Bredden på "boksen"*/
+    background-color: #3f301c;
+    padding: 5px;
+    margin: 5px;
+    order: 2;
+}
+
+.innhold {
+    background-color:rgba(53, 45, 33, 0.849);
+    flex: 1; /*Bruker tilgjengelig bredde*/
+    order: 3;
+    padding: 5px;
+    margin: 5px;
+}
+
+.bunntekst {
+    background-color: rgb(68, 60, 49);
+    flex-basis: 100%;
+    padding: 5px;
+    margin: 5px;
+    order: 4;
+}
+
+body, html {
+    height: 100%;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Media/Violin.jpg");
+
+    height: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    position: relative;
+  }
+  
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
